@@ -6,7 +6,7 @@ $sql = "SELECT * FROM ProductList WHERE inventoryReceived - inventoryShipped > 0
 if($search) {
 	// To protect MySQL injection since I have not used any ORM
 	$search = mysqli_real_escape_string($db, $search);
-	$sql = "SELECT * FROM ProductList WHERE inventoryReceived - inventoryShipped > 0 AND (brand = '%$search%' OR model = '%$search%' OR type = '%$search%') LIMIT 20;";
+	$sql = "SELECT * FROM ProductList WHERE inventoryReceived - inventoryShipped > 0 AND (brand LIKE '%$search%' OR model LIKE '%$search%' OR type LIKE '%$search%') LIMIT 20;";
 }
 $result = mysqli_query($db, $sql);
 ?>
