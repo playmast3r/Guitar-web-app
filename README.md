@@ -33,4 +33,9 @@ Allotted 72 Hours. Completed in 24 Hours. :)
 ## Steps
 1. Git clone the Repo or Download zip.
 2. `` cd Guitar-web-app ``
-3. Open http://localhost/Guitar-web-app/ in your browser, or configure the virtualhost as per your needs.
+3. Create database based on db.sql file provided.
+4. Edit config.php to match your database connection.
+5. Open http://localhost/Guitar-web-app/ in your browser, or configure the virtualhost as per your needs.
+
+## Live Demo:
+https://playmaster.xyz/guitar/index
